@@ -1,0 +1,90 @@
+.nav-bar {
+  z-index: 100;
+}
+.grid-elements-top {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 0.6fr 0.6fr;
+  grid-template-rows: 70px;
+  grid-template-areas: "logo search magasin config";
+}
+.logo_img {
+  grid-area: logo;
+  padding: 0px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 168px;
+}
+.logo {
+  grid-area: logo;
+  position: relative;
+}
+.search {
+  grid-area: search;
+  display: flex;
+}
+.search > svg {
+  margin-right: 10px;
+}
+.magasin {
+  grid-area: magasin;
+}
+.magasin > svg {
+  margin-right: 10px;
+}
+.config {
+  display: flex;
+  grid-area: config;
+  color: white;
+  align-items: center;
+  justify-items: center;
+  background-color: #7daf3f;
+}
+.config > svg {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.fence-right {
+  display: none;
+}
+.config:hover .fence-right {
+  display: block;
+}
+.config:hover .fence-left {
+  display: none;
+}
+.config:hover {
+  background-color: #4d302b;
+}
+
+.grid-elements-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 0.6fr 0.6fr;
+  grid-template-rows: 50px;
+  grid-template-areas: "acceuil boutique realisation contact";
+}
+.acceuil {
+  grid-area: acceuil;
+  font-size: 16px;
+}
+.boutique {
+  grid-area: boutique;
+}
+.realisation {
+  grid-area: realisation;
+}
+.contact {
+  grid-area: contact;
+}
+.logo,
+.contact,
+.realisation,
+.boutique,
+.acceuil,
+.config,
+.magasin,
+.search {
+  padding: 0 10px;
+  text-align: center;
+}
