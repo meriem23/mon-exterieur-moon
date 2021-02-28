@@ -16,9 +16,13 @@ const Navbar = () => {
         <Config />
       </div>
       <div className="grid-elements-bottom">
-        <p className="acceuil">Accueil</p>
+        <div className="acceuil">
+          <p>Accueil</p>
+        </div>
         <Boutique />
-        <p className="realisation">Nos réalisation</p>
+        <div className="realisation">
+          <p>Nos réalisations</p>
+        </div>
         <Contact />
       </div>
     </div>

@@ -4,8 +4,9 @@ import Loop from "../../icons/Loop";
 const Search = () => {
   return (
     <div className="search">
-      <Loop />
-      Rechercher
+      <Loop className="loop-left" />
+      <input type="text" className="search-input" placeholder="Rechercher" />
+      <Loop className="loop-right" />
     </div>
   );
 };

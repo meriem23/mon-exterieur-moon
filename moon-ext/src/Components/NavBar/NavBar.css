@@ -1,38 +1,89 @@
+/* Navbar */
 .nav-bar {
   z-index: 100;
 }
+/* Top Part */
 .grid-elements-top {
   display: grid;
-  grid-template-columns: 1fr 1.8fr 0.6fr 0.6fr;
+  grid-template-columns: 1fr 1.4fr 0.6fr 0.6fr;
   grid-template-rows: 70px;
   grid-template-areas: "logo search magasin config";
+  border-bottom: 1px solid #e2e2e2;
+}
+/* Logo Comp */
+.logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  border-right: 1px solid #e2e2e2;
 }
 .logo_img {
-  grid-area: logo;
   padding: 0px;
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(50%, -50%);
   width: 168px;
 }
-.logo {
-  grid-area: logo;
-  position: relative;
-}
+/* Search Comp */
 .search {
   grid-area: search;
   display: flex;
+  align-items: center;
+  justify-items: center;
+  border-right: 1px solid #e2e2e2;
+}
+input[type="text"] {
+  font-size: 16px;
+}
+
+.search-input {
+  width: 90%;
+  outline-style: none;
+  border: 0px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  transition: all 0.3s;
+  margin-left: 40px;
 }
 .search > svg {
   margin-right: 10px;
 }
+.loop-right {
+  display: none;
+}
+.search:hover .loop-right {
+  display: block;
+  transition: all 0.3s;
+}
+.search:hover .loop-left {
+  display: none;
+  transition: all 0.3s;
+}
+/* Magasin Comp */
 .magasin {
+  display: flex;
   grid-area: magasin;
+  align-items: center;
+  justify-items: center;
+  border-right: 1px solid #e2e2e2;
 }
 .magasin > svg {
   margin-right: 10px;
+  margin-left: 10px;
 }
+.location-right {
+  display: none;
+}
+.magasin:hover .location-right {
+  display: block;
+}
+.magasin:hover .location-left {
+  display: none;
+}
+/*Config Comp */
 .config {
   display: flex;
   grid-area: config;
@@ -40,6 +91,7 @@
   align-items: center;
   justify-items: center;
   background-color: #7daf3f;
+  border: none;
 }
 .config > svg {
   margin-right: 10px;
@@ -57,26 +109,46 @@
 .config:hover {
   background-color: #4d302b;
 }
-
+/*Bottom Part */
 .grid-elements-bottom {
   display: grid;
-  grid-template-columns: 1fr 1.8fr 0.6fr 0.6fr;
+  grid-template-columns: 0.99fr 1fr 1fr 0.6fr;
   grid-template-rows: 50px;
   grid-template-areas: "acceuil boutique realisation contact";
+  border-bottom: 1px solid #e2e2e2;
+  border-right: 2px solid #e2e2e2;
+  border-left: 2px solid #e2e2e2;
 }
+/*Acceuil Comp */
 .acceuil {
   grid-area: acceuil;
   font-size: 16px;
+  cursor: default;
 }
+.acceuil:hover {
+  background-color: #7daf3f;
+}
+/* Boutique Comp */
 .boutique {
   grid-area: boutique;
+  border-right: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
 }
+/* Realisation Comp */
 .realisation {
   grid-area: realisation;
+  font-size: 16px;
+  cursor: default;
 }
+.realisation:hover {
+  background-color: #7daf3f;
+}
+/* Contact Comp */
 .contact {
   grid-area: contact;
+  border-left: 1px solid #e2e2e2;
 }
+/* All */
 .logo,
 .contact,
 .realisation,
