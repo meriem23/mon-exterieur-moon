@@ -1,0 +1,45 @@
+@import "../../colors";
+.footer_style {
+  display: grid;
+  position: relative;
+  background-color: white;
+  grid-template-columns: 1.1fr 0.9fr 0.9fr 0.9fr;
+  gap: 0px 15px;
+}
+.footer_header {
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.link_footer {
+  color: $grayColor;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+}
+.title_adress_footer {
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+}
+.content_adress_footer {
+  color: $grayColor;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+}
+.work_hours {
+  display: flex;
+  align-items: center;
+}
+.work_time {
+  margin-left: 5%;
+  color: $grayColor;
+}
+.work_days {
+  color: black;
+}
+span {
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  font-size: 11px;
+}

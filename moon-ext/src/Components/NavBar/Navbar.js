@@ -5,17 +5,18 @@ import Magasin from "./Magasin";
 import Search from "./Search";
 import Boutique from "./Boutique";
 import Contact from "./Contact";
+import "./_Navbar.scss";
 
 const Navbar = () => {
   return (
-    <div className="nav-bar">
-      <div className="grid-elements-top">
+    <div className="nav_bar">
+      <div className="grid_elements_top">
         <Logo />
         <Search />
         <Magasin />
         <Config />
       </div>
-      <div className="grid-elements-bottom">
+      <div className="grid_elements_bottom">
         <div className="acceuil">
           <p>Accueil</p>
         </div>

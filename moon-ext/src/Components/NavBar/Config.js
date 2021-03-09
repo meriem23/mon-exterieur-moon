@@ -4,9 +4,9 @@ import Fence from "../../icons/Fence";
 const Config = () => {
   return (
     <div className="config">
-      <Fence className="fence-left" />
+      <Fence className="fence_left" />
       Configurateur
-      <Fence className="fence-right" />
+      <Fence className="fence_right" />
     </div>
   );
 };

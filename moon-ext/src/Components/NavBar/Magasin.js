@@ -4,9 +4,9 @@ import Location from "../../icons/Location";
 const Magasin = () => {
   return (
     <div className="magasin">
-      <Location className="location-left" />
+      <Location className="location_left" />
       Notre magasin
-      <Location className="location-right" />
+      <Location className="location_right" />
     </div>
   );
 };

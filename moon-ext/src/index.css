@@ -17,6 +17,6 @@ code {
   z-index: 99;
   position: fixed;
 }
-.body-container {
+.body_container {
   padding: 0 8%;
 }
